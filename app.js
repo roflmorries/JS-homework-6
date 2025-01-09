@@ -4,6 +4,7 @@ let text = prompt('Введите текст')
 
 console.log(defUpperStr(text));
 
+console.log('---------------------');
 // 2.
 
 function evenFn (n) {
@@ -19,6 +20,7 @@ console.log(evenFn(10));
 console.log(evenFn(15));
 console.log(evenFn(20));
 
+console.log('---------------------');
 
 // 3.
 
@@ -30,6 +32,7 @@ console.log(weekFn(9))
 console.log(weekFn(1.5))
 console.log(weekFn('2'))
 
+console.log('---------------------');
 
 // 4.
 

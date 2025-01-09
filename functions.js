@@ -20,20 +20,24 @@ function evenFn (n) {
 // 3.
 
 function weekFn(n) {
-    switch (true) {
-        case (Number.isInteger(n) && n === 1) :
+    if (!Number.isInteger(n)) {
+        return null;
+    }
+
+    switch (n) {
+        case 1:
             return "Понедельник";
-        case (Number.isInteger(n) && n === 2) :
+        case 2:
             return "Вторник";
-        case (Number.isInteger(n) && n === 3) :
+        case 3:
             return "Среда";
-        case (Number.isInteger(n) && n === 4) :
+        case 4:
             return "Четверг";
-        case (Number.isInteger(n) && n === 5) :
+        case 5:
             return "Пятница";
-        case (Number.isInteger(n) && n === 6) :
+        case 6:
             return "Суббота";
-        case (Number.isInteger(n) && n === 7) :
+        case 7:
             return "Воскресенье";
         default:
             return null;
